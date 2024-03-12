@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="scripts/script.js"></script>
+    <script type="module" src="scripts/app.js" ></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcdT3UpAAAAABwFg-pKWtdoECMfgnfJYIVcC5RC"></script>
+    <script defer type="module" src="scripts/captcha.js"></script>
+    <title>Contactpagina</title>
+</head>
+
+<body>
+    <navigation></navigation>
+    <div class="page">
+        <section class="contact">
+      
+          <h1>Contact</h1>
+      
+          <form id="submit" class="form-contactpagina">
+      
+      
+            <div class="form-contactpagina__inputelement fx-col">
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email">
+            </div>
+            
+            <div class="form-contactpagina__inputelement fx-col">
+              <label for="name">Onderwerp: </label>
+              <input type="text" name="onderwerp" id="onderwerp" maxlength="200" required>
+            </div>
+
+            <div class="form-contactpagina__inputelement fx-col">
+                <label for="bericht">Bericht: </label>
+                <textarea type="text" id="bericht" name="bericht" rows="4" maxlength="600" required></textarea>
+            </div>
+
+            <div class="form-contactpagina__inputelement">
+              <input id="submit" type="submit" value="Verstuur!">
+            </div>      
+      
+          </form>
+      
+      
+        </section>
+      </div>
+</body>
+
+</html>
